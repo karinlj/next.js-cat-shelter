@@ -1,19 +1,17 @@
+import Link from "next/link";
+
 const getCats = async () => {
+  //imitate delay
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+
   const url = "http://localhost:4000/cats";
   const res = await fetch(url, {
     next: {
-      // revalidate: 30, //get new data after 30 sec
-      revalidate: 0, //use 0 to not use cache
+      revalidate: 1, //get new data after 30 sec
+      //   revalidate: 0, //use 0 to not use cache
     },
   });
-
   return res.json();
-
-  //   fetch("http://localhost:4000/cats")
-  //     .then((res) => res.json())
-  //     .then((resData) => {
-  //       console.log("resData: ", resData);
-  //     });
 };
 
 const CatList = async () => {
@@ -21,15 +19,15 @@ const CatList = async () => {
   console.log("catsData: ", catsData);
   return (
     <div>
-      <p>catlist</p>
-
       <ul>
         {catsData.map((cat) => {
           return (
-            <li key={cat.id}>
-              <h2> {cat.name}</h2>
-              <p> {cat.description.slice(0, 100)}...</p>
-            </li>
+            <Link href={`/cats/${cat.id}`}>
+              <li key={cat.id}>
+                <h2> {cat.name}</h2>
+                <p> {cat.description.slice(0, 100)}...</p>
+              </li>
+            </Link>
           );
         })}
 

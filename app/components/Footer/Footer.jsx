@@ -7,7 +7,7 @@ const Footer = () => {
         <br />
         Karin Ljunggren
       </p>
-      <p>@ {new Date().getFullYear()}- Karin Ljunggren</p>
+      <p className="copy">@ {new Date().getFullYear()}- Karin Ljunggren</p>
     </section>
   );
 };

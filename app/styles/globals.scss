@@ -25,19 +25,16 @@ ul {
 }
 
 body {
-  // min-width: 320px;
-  // min-height: 100vh;
-  // background: $themecolorBlue;
-  // font-size: 1.1rem;
-  // max-width: 1280px;
-  // margin: 0 auto;
-
   padding: 2rem;
   margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
   background: $themecolorBlue;
   font-size: 1.1rem;
+  color: #fff;
+}
+main {
+  min-height: 100vh;
+  max-width: 720px;
+  margin-top: 2rem;
 }
 h1 {
   width: 100%;
@@ -47,9 +44,12 @@ h1 {
   margin: 1rem 0;
 }
 p {
-  color: #fff;
+  color: $themecolorBlueSuperLight;
+  line-height: 1.7;
 }
-
+a {
+  color: $themecolorBlueLight;
+}
 button {
   border-radius: 8px;
   border: 2px solid transparent;
@@ -63,17 +63,5 @@ button {
   color: #fff;
   &:hover {
     border: 2px solid $themecolorGreen;
-  }
-}
-.shelter-section {
-  // max-width: 500px;
-  // margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
-  margin-top: 3rem;
-  min-height: 100vh;
-  .preamble {
-    font-size: 1.2rem;
   }
 }

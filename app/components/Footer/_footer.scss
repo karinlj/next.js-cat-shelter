@@ -1,11 +1,17 @@
 @import "../../styles/variables.scss";
 
 .footer {
-  margin-top: 5rem;
+  border-top: 1px solid $themeBorderColor;
+  margin-top: 2rem;
+  padding-top: 1rem;
   font-size: 0.9rem;
   p {
     color: $themecolorBlueSuperLight;
     margin-bottom: 0.8rem;
-    margin-left: 1rem;
+  }
+  .copy {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    color: $themecolorBlueLight;
   }
 }
