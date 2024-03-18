@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  margin-top: 5rem;
+  font-size: 0.9rem;
+  p {
+    color: $themecolorBlueSuperLight;
+    margin-bottom: 0.8rem;
+    margin-left: 1rem;
+  }
+}
