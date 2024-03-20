@@ -21,34 +21,36 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem 2rem;
-  min-height: 100vh;
 }
-
 body {
-  padding: 2rem;
+  padding: 1rem 0;
   margin: 0;
   background: $themecolorBlue;
   font-size: 1.1rem;
   color: #fff;
+  @media all and (min-width: 768px) {
+    padding: 2rem;
+  }
 }
 main {
-  min-height: 100vh;
+  min-height: 80vh;
   max-width: 720px;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 h1 {
   width: 100%;
   font-size: 3.2em;
   line-height: 1.1;
   color: $themecolorPink;
-  margin: 1rem 0;
+  margin: 1rem 0 2rem 0;
 }
 p {
-  color: $themecolorBlueSuperLight;
+  color: #fff;
   line-height: 1.7;
 }
 a {
   color: $themecolorBlueLight;
+  text-decoration: none;
 }
 button {
   border-radius: 8px;
@@ -63,5 +65,29 @@ button {
   color: #fff;
   &:hover {
     border: 2px solid $themecolorGreen;
+  }
+}
+.shelter {
+  max-width: 100%;
+  .home-section {
+    border: 1px solid $themecolorBlueSuperLight;
+    border-radius: $themeBorderRadius;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+    }
+    p {
+      margin-top: 0;
+    }
+    .home-img {
+      border-radius: $themeBorderRadius;
+      @media all and (min-width: 768px) {
+        margin-left: 2rem;
+      }
+    }
   }
 }

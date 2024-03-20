@@ -1,7 +1,7 @@
 {
   "cats": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Jojo",
       "date": "2024-02-29",
       "description": "Cat ipsum dolor sit amet, catto munch salmono. Purr like an angel licks your face so sleep in the bathroom sink but hell is other people yet oooo! dangly balls! jump swat swing flies so sweetly to the floor crash move on wash belly nap get video posted to internet for chasing red dot.",
@@ -9,7 +9,7 @@
       "foundHome": true
     },
     {
-      "id": 90,
+      "id": "90",
       "date": "2024-02-29",
       "name": "Vilda",
       "description": "Cat ipsum dolor sit amet, tom norwegian forest cheetah and havana brown. Grimalkin cheetah lynx, so donskoy devonshire rex, or russian blue, but himalayan.",
@@ -17,7 +17,7 @@
       "foundHome": true
     },
     {
-      "id": 5293,
+      "id": "5293",
       "date": "2024-03-06",
       "name": "Filip",
       "description": "Cat ipsum dolor sit amet, tom norwegian forest cheetah and havana brown. Grimalkin cheetah lynx, so donskoy devonshire rex, or russian blue, but himalayan.",
@@ -25,7 +25,7 @@
       "foundHome": true
     },
     {
-      "id": 6365,
+      "id": "6365",
       "date": "2024-03-06",
       "name": "Hugo",
       "description": "Cat ipsum dolor sit amet, tom norwegian forest cheetah and havana brown. Grimalkin cheetah lynx, so donskoy devonshire rex, or russian blue, but himalayan.",
@@ -33,7 +33,7 @@
       "foundHome": false
     },
     {
-      "id": 4940,
+      "id": "4940",
       "date": "2024-03-06",
       "name": "Lukas",
       "description": "Cat ipsum dolor sit amet, tom norwegian forest cheetah and havana brown. Grimalkin cheetah lynx, so donskoy devonshire rex, or russian blue, but himalayan.",

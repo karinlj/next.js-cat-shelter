@@ -1,13 +1,14 @@
 import Link from "next/link";
+import CatItem from "./CatItem";
 
 const getCats = async () => {
-  //imitate delay
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+  // delay to imitate loading
+  //   await new Promise((resolve) => setTimeout(resolve, 2000));
 
   const url = "http://localhost:4000/cats";
   const res = await fetch(url, {
     next: {
-      revalidate: 1, //get new data after 30 sec
+      revalidate: 0, //get new data after 30 sec
       //   revalidate: 0, //use 0 to not use cache
     },
   });
@@ -23,10 +24,11 @@ const CatList = async () => {
         {catsData.map((cat) => {
           return (
             <Link href={`/cats/${cat.id}`}>
-              <li key={cat.id}>
+              <CatItem item={cat} />
+              {/* <li key={cat.id}>
                 <h2> {cat.name}</h2>
                 <p> {cat.description.slice(0, 100)}...</p>
-              </li>
+              </li> */}
             </Link>
           );
         })}

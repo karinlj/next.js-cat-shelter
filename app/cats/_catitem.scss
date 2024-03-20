@@ -1,0 +1,41 @@
+@import "../styles/variables.scss";
+
+.list-item {
+  //   background-color: $themecolorBlueSuperLight;
+  background: #fff;
+  line-height: 1.5rem;
+  padding: 15px 20px;
+  margin: 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $themeBorderColor;
+  color: $themecolor;
+  border-radius: $themeBorderRadius;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  span,
+  p {
+    color: $themecolor;
+  }
+  span {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+  }
+
+  .new-home {
+    color: #b3b3b3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &.found {
+      color: $themecolorLila;
+    }
+    &:hover {
+      filter: brightness(70%);
+    }
+  }
+}

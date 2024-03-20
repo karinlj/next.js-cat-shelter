@@ -1,16 +1,16 @@
-import { Suspense } from "react";
+// import { Suspense } from "react";
 import CatList from "./CatList";
-import Loading from "../loading";
+import Link from "next/link";
+// import Loading from "../loading";
 
 const Cats = () => {
   return (
     <main>
-      <h1>All cats at the Shelter.</h1>
+      <h1>Our Cats at the Shelter.</h1>
+      {/* <Suspense fallback={<Loading />}> */}
+      {/* </Suspense> */}
 
-      <Suspense fallback={<Loading />}>
-        {" "}
-        <CatList />
-      </Suspense>
+      <CatList />
     </main>
   );
 };

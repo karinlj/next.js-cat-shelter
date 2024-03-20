@@ -17,14 +17,22 @@ const Header = () => {
             placeholder="blur"
           />
         </div>
+        <nav>
+          <Link href="/" className="nav-link">
+            Home
+          </Link>
+          <Link href="/cats" className="nav-link">
+            Our Cats
+          </Link>
+          <Link href="/cats/add" className="nav-link">
+            Add New Cat
+          </Link>
+        </nav>
 
-        <button className="login">Login</button>
+        {/* <button className="login">Login</button> */}
       </div>
 
       <div className="lower">
-        <Link href="/" className="login-link">
-          Dashboard
-        </Link>
         {/* {!isLoggedIn && path !== "/login" && (
           <StyledLink href="/login">Login</StyledLink>
         )}
