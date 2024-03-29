@@ -1,10 +1,14 @@
+"use client";
 import "./_header.scss";
 import "../../styles/globals.scss";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import NewLogo from "../../../public/cat_shelter_logo.png";
 
 const Header = () => {
+  const pathname = usePathname();
+
   return (
     <header>
       <div className="upper">
@@ -18,30 +22,36 @@ const Header = () => {
           />
         </div>
         <nav>
-          <Link href="/" className="nav-link">
+          <Link
+            href="/"
+            className={`nav-link ${pathname === "/" ? "active" : ""}`}
+          >
             Home
           </Link>
-          <Link href="/cats" className="nav-link">
-            Our Cats
+
+          <Link
+            href="/cats"
+            className={`nav-link ${pathname === "/cats" ? "active" : ""}`}
+          >
+            Our Cats{" "}
           </Link>
-          <Link href="/cats/add" className="nav-link">
-            Add New Cat
+
+          <Link
+            href="/cats/add"
+            className={`nav-link ${pathname === "/cats/add'" ? "active" : ""}`}
+          >
+            Add New Cat{" "}
+          </Link>
+
+          <Link
+            href="/cats/strays"
+            className={`nav-link ${
+              pathname === "/cats/strays" ? "active" : ""
+            }`}
+          >
+            Strays
           </Link>
         </nav>
-
-        {/* <button className="login">Login</button> */}
-      </div>
-
-      <div className="lower">
-        {/* {!isLoggedIn && path !== "/login" && (
-          <StyledLink href="/login">Login</StyledLink>
-        )}
-
-        {isLoggedIn && path !== "/login" && (
-          <StyledButton onClick={handleLogout}>Logout</StyledButton>
-        )}
-
-        {path === "/login" && <StyledLink href="/">Back to Home</StyledLink>} */}
       </div>
     </header>
   );

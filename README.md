@@ -1,34 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# the Cat Shelter - Next.js
 
-## Getting Started
+<img width="500px" src="./public/Screenshot.jpg" alt="Cat Shelter 2" />
 
-First, run the development server:
+## React course-Lab2
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Next.js project. <br/>
+Fetching and updating DB data with JSON server.<br/>
+A Cat Shelter Home page where you can see a list of the current cats in the shelter.<br/>
+You can also add cats and see details of each cat. <br/>
+There is also a dumm list of stray cats in line for the Shelter.
+Enjoy!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+To clone
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+`https://github.com/karinlj/next.js-cat-shelter.git`
 
-## Learn More
+To install
 
-To learn more about Next.js, take a look at the following resources:
+`cd next.js-cat-shelter`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`npm install`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To run
 
-## Deploy on Vercel
+First run `json-server --watch --port 4000 ./_data/db.json`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+then open a new terminal and run `npm run dev`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To test
+
+Open a new terminal and run `npm run test`
+
+## Built With
+
+- Next.js
+- React.js
+- JSON server
+- SCSS
+- Jest
+
+## Author
+
+- **Karin Ljunggren** - [karinlj](https://github.com/karinlj)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

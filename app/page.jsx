@@ -3,15 +3,24 @@ import Hugo from "../public/hugo_play.jpg";
 import Two from "../public/filip_lo.jpg";
 import Mini from "../public/vilda2.jpg";
 import Image from "next/image";
+import Link from "next/link";
+import "./styles/variables.scss";
 
 export default function Home() {
+  const nextStyle = {
+    color: "#fff",
+    fontSize: "1.7rem",
+    marginLeft: "1rem",
+  };
   return (
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="shelter">
-        <h1>The Cat Shelter Next.</h1>
+      <main className="shelter-home">
+        <h1 data-testid="title">
+          The Cat Shelter. <span style={nextStyle}>(Next.js)</span>
+        </h1>
         <section className="home-section">
           <p>
             Every life counts - Welcome to make a difference with us! The Cat
@@ -64,6 +73,10 @@ export default function Home() {
             placeholder="blur"
           />
         </section>
+
+        <Link href="./cats" className="link-button ">
+          See All Our Cats
+        </Link>
       </main>
     </>
   );

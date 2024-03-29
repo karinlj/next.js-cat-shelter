@@ -5,52 +5,43 @@
       "name": "Jojo",
       "date": "2024-02-29",
       "description": "Cat ipsum dolor sit amet, catto munch salmono. Purr like an angel licks your face so sleep in the bathroom sink but hell is other people yet oooo! dangly balls! jump swat swing flies so sweetly to the floor crash move on wash belly nap get video posted to internet for chasing red dot.",
-      "goOutside": false,
-      "foundHome": true
+      "goOutside": false
     },
     {
       "id": "90",
       "date": "2024-02-29",
       "name": "Vilda",
       "description": "Cat ipsum dolor sit amet, tom norwegian forest cheetah and havana brown. Grimalkin cheetah lynx, so donskoy devonshire rex, or russian blue, but himalayan.",
-      "goOutside": true,
-      "foundHome": true
+      "goOutside": true
     },
     {
       "id": "5293",
       "date": "2024-03-06",
       "name": "Filip",
-      "description": "Cat ipsum dolor sit amet, tom norwegian forest cheetah and havana brown. Grimalkin cheetah lynx, so donskoy devonshire rex, or russian blue, but himalayan.",
-      "goOutside": true,
-      "foundHome": true
+      "description": "Cat ipsum dolor sit amet. Sniff all the things hide from vacuum cleaner and sit in box or leave fur on owners clothes, yet meowzer and is good you understand your place in my world or has closed eyes but still sees you.",
+      "goOutside": true
     },
     {
       "id": "6365",
       "date": "2024-03-06",
       "name": "Hugo",
-      "description": "Cat ipsum dolor sit amet, tom norwegian forest cheetah and havana brown. Grimalkin cheetah lynx, so donskoy devonshire rex, or russian blue, but himalayan.",
-      "goOutside": true,
-      "foundHome": false
+      "description": "Cat ipsum dolor sit amet, Claw drapes hiding behind the couch until lured out by a feathery toy but annoy owner until he gives you food.",
+      "goOutside": true
     },
     {
       "id": "4940",
       "date": "2024-03-06",
       "name": "Lukas",
-      "description": "Cat ipsum dolor sit amet, tom norwegian forest cheetah and havana brown. Grimalkin cheetah lynx, so donskoy devonshire rex, or russian blue, but himalayan.",
-      "goOutside": false,
-      "foundHome": false
-    }
-  ],
-  "users": [
-    {
-      "id": "1",
-      "email": "karin@test.se",
-      "password": "1234"
+      "description": "Cat ipsum dolor. If human is on laptop sit on the keyboard naughty running cat yet chase imaginary bugs, and lick sellotape..",
+      "goOutside": false
     },
     {
-      "id": "2",
-      "email": "mats@test.se",
-      "password": "4321"
+      "id": "4048",
+      "date": "2024-03-28",
+      "name": "Oliver",
+      "description": "super cute",
+      "goOutside": true,
+      "foundHome": false
     }
   ]
 }

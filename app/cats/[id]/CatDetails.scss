@@ -1,8 +1,10 @@
 @import "../../styles/variables.scss";
 
-.cat-details-id {
-  font-weight: 400;
-  font-size: 0.8rem;
-  margin-left: 0.5rem;
-  color: #fff;
+.cat-details {
+  .cat-details-id {
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    color: #fff;
+  }
 }

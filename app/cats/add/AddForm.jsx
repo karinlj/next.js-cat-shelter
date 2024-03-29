@@ -8,7 +8,7 @@ const AddForm = () => {
   const router = useRouter();
 
   const defaultInputValues = {
-    id: Math.floor(Math.random() * 10001) + "", //random id
+    id: Math.floor(Math.random() * 10001) + "",
     date: new Date().toJSON().slice(0, 10),
     name: "",
     description: "",
@@ -18,7 +18,6 @@ const AddForm = () => {
   const [formData, setFormData] = useState(defaultInputValues);
 
   const handleSubmit = async (e) => {
-    console.log("handleSubmit");
     e.preventDefault();
 
     const newItem = {
