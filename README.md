@@ -2,7 +2,7 @@
 
 <img width="500px" src="./public/Screenshot.jpg" alt="Cat Shelter 2" />
 
-## React course-Lab2
+## next.js-cat-shelter
 
 Next.js project. <br/>
 Fetching and updating DB data with JSON server.<br/>
