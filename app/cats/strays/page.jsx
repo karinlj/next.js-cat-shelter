@@ -35,7 +35,7 @@ const Strays = () => {
       <ul>
         {strays &&
           strays.map((stray) => {
-            return <CatItem item={stray} />;
+            return <CatItem item={stray} key={stray.id} />;
           })}
       </ul>
     </main>
