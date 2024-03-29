@@ -38,7 +38,7 @@ const Header = () => {
 
           <Link
             href="/cats/add"
-            className={`nav-link ${pathname === "/cats/add'" ? "active" : ""}`}
+            className={`nav-link ${pathname === "/cats/add" ? "active" : ""}`}
           >
             Add New Cat{" "}
           </Link>

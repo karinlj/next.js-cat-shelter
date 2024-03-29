@@ -7,8 +7,7 @@ const getCats = async () => {
   // delay to imitate loading
   await new Promise((resolve) => setTimeout(resolve, 500));
 
-  const url =
-    "https://json-server-vercel-54h43r8i2-karinljs-projects.vercel.app/cats";
+  const url = "http://localhost:4000/cats";
   const res = await fetch(url, {
     next: {
       revalidate: 0, //use 0 to not use cache (opt out) - Cannot apply Static Rendering
