@@ -40,7 +40,7 @@ const CatList = async () => {
       <ul>
         {catsData.map((cat) => {
           return (
-            <Link href={`/cats/${cat.id}`}>
+            <Link href={`/cats/${cat.id}`} key={cat.id}>
               <CatItem item={cat} />
             </Link>
           );
