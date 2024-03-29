@@ -14,7 +14,8 @@ export const dynamicParams = true; //=false => Next will return a 404 if the use
 //2. Tell Next in advace all the id:s there is (generateStaticParams() gets exported from the file), make pages and routes in advance.
 
 export const generateStaticParams = async () => {
-  const url = "http://localhost:4000/cats";
+  const url =
+    "https://json-server-vercel-54h43r8i2-karinljs-projects.vercel.app/cats";
   const res = await fetch(url);
   const cats = await res.json();
 
@@ -25,7 +26,9 @@ export const generateStaticParams = async () => {
 };
 
 const getCat = async (id) => {
-  const url = "http://localhost:4000/cats/" + id;
+  const url =
+    "https://json-server-vercel-54h43r8i2-karinljs-projects.vercel.app/cats/" +
+    id;
   const res = await fetch(url, {
     next: {
       revalidate: 60, //get new data after 60 sec

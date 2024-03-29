@@ -40,8 +40,7 @@
       "date": "2024-03-28",
       "name": "Oliver",
       "description": "super cute",
-      "goOutside": true,
-      "foundHome": false
+      "goOutside": true
     }
   ]
 }

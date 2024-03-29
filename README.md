@@ -8,7 +8,7 @@ Next.js project. <br/>
 Fetching and updating DB data with JSON server.<br/>
 A Cat Shelter Home page where you can see a list of the current cats in the shelter.<br/>
 You can also add cats and see details of each cat. <br/>
-There is also a dumm list of stray cats in line for the Shelter.
+There is also a simple list of stray cats in line for the Shelter.<br/>
 Enjoy!
 
 ## Installation

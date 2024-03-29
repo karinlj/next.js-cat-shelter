@@ -13,7 +13,6 @@ const AddForm = () => {
     name: "",
     description: "",
     goOutside: true,
-    foundHome: false,
   };
   const [formData, setFormData] = useState(defaultInputValues);
 
@@ -23,7 +22,8 @@ const AddForm = () => {
     const newItem = {
       ...formData,
     };
-    const url = "http://localhost:4000/cats";
+    const url =
+      "https://json-server-vercel-54h43r8i2-karinljs-projects.vercel.app/cats";
 
     //add item to db
     const res = await fetch(url, {
