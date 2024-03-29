@@ -58,7 +58,7 @@ export default function Home() {
         </section>
         <section className="home-section">
           <p>
-            Show belly cats woo i show my fluffy belly but it's a trap! if you
+            Show belly cats woo i show my fluffy belly but it is a trap! if you
             pet it i will tear up your hand. Whatever growl at dogs in my sleep.
             Scratch me there, elevator butt. You are a captive audience while
             sitting on the toilet, pet me please stop looking at your phone and
